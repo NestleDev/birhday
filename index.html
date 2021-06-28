@@ -258,6 +258,7 @@
                 const key = e.target.dataset.key
 
                 if (key === e.target.value) {
+                    e.target.blur()
                     document.querySelector(`#${e.target.dataset.to}`).style.left = 0;
                 }
             }
